@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello wasm-pack!</title>
+  <style>
+    body {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+  </head>
+  <body>
+    <noscript>This page contains webassembly and javascript content, please enable javascript in your browser.</noscript>
+    <button id="play-pause"></button>
+    <canvas id="game-of-life-canvas"></canvas>
+    <script src="./bootstrap.js"></script>
+    <input type="range" id="speed" min="1" max="100"><label for="speed">Speed: <output id="speed_value"></output></label>
+    <input type="range" id="width" name="width" list="size_values" min="5" max="7" step="1"/><label for="width">Width: <output id="width_value"></output></label>
+    <input type="range" id="height" name="height" list="size_values" min="5" max="7" step="1"/><label for="height">Height: <output id="height_value"></output></label>
+    <datalist id="size_values">
+      <option value="32" label="small"></option>
+      <option value="64" label="medium"></option>
+      <option value="128" label="large"></option>
+    </datalist>
+ 
+  </body>
+</html>
